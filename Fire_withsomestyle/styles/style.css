@@ -1,0 +1,79 @@
+/*Creates the basic layout*/
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: #E6DFDC;
+	color: #0A2740;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1{
+	font-family: seasoned-hostess, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 5em;
+	color: #D95829;
+}
+
+main p{
+	width: 50%;
+	margin-top: 50px;
+}
+
+main, header, footer{
+	flex-shrink: 0;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 11px;
+}
+
+/*Align the navigation with flexbox*/
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin-right: 20px;
+	font-size: 1.5em;
+	
+}
+
+nav a{
+	padding: 1em;
+	font-family: seasoned-hostess, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+}
+
+a{
+	color: #D95829;
+}
+
+a:hover{
+	color: #0A2740;
+}
+/*custom CSS for artist page*/
+.artist_image{
+	float: right;
+	margin-left: 20px;
+}
+
